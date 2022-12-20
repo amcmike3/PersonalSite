@@ -1,5 +1,48 @@
+/*
+color scheme by hex:
+Yellow #FFC857
+Orange #C44900
+Blue #56A3A6
+Black #2E282A
+Gray #585B56
+*/
 #mainHeader {
-  background-color: blue;
-  color: lightgrey;
-  font-family: fantasy;
+  color: white;
+}
+body {
+  background-color: #56A3A6;
+}
+.card-title {
+  color: white;
+}
+.container ul, p {
+  background-color: #FFC857;
+}
+.mastersDegree {
+  opacity: .6;
+}
+
+
+.typewriter h1 {
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #C44900; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
