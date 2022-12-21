@@ -15,11 +15,14 @@ body {
 .card-title {
   color: white;
 }
-.container ul, p {
+.container ul, p, ol {
   background-color: #FFC857;
 }
 .mastersDegree {
   opacity: .6;
+}
+input:hover {
+		background-color: #C44900;
 }
 
 
