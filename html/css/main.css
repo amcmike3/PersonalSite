@@ -21,6 +21,12 @@ body {
 .mastersDegree {
   opacity: .6;
 }
+.mycontent-left {
+  border-right: 5px solid #56A3A6;
+}
+.mycontent-right {
+  border-left: 5px solid #56A3A6;
+}
 input:hover {
 		background-color: #C44900;
 }
