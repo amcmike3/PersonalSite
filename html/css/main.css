@@ -151,7 +151,7 @@ h1 {
   /* Adjust as needed */
   animation:
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret .5s step-end 8;
 }
 
 /* The typing effect */
@@ -172,6 +172,6 @@ h1 {
   }
 
   50% {
-    border-color: orange
+    border-color: black
   }
 }
