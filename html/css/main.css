@@ -27,9 +27,6 @@ body {
 .mycontent-right {
   border-left: 5px solid #56A3A6;
 }
-input:hover {
-		background-color: #C44900;
-}
 
 .hover-1 {
   --c: #585B56; /* the color */
@@ -87,6 +84,51 @@ input:hover {
   color: #CC333F;
   transition: .3s, -webkit-mask-size .3s .3s;
 }
+.hover-3, .card-title {
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+
+  color: #0000;
+  padding-block: var(--b);
+  background:
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.hover-3:hover, .card-title:hover{
+  --_p: 100%;
+  --_s: .3s;
+}
+
+
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 4rem;
+}
+
 
 .typewriter h1 {
   color: white;

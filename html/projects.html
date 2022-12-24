@@ -9,18 +9,19 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
-
 <link rel="stylesheet" href="css/main.css">
+
 
 <body>
   <!-- Start NAVBAR -->
-      <nav class="navbar navbar-dark bg-dark" >
+      <nav class="navbar navbar-light bg-dark" >
         <ul class="nav nav-pills">
-          <li class="nav-item bg-light">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
+          <form class="form-inline" target="_blank" action="index.html">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Home</button>
+          </form>
+          <li>/</li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Portfolio Projects</a>
+            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Portfolio Projects</a>
             <ul class="dropdown-menu ">
               <!-- TODO: Add links to HTML docs that talk about projects in this dropdown -->
               <li><a class="dropdown-item" href="projects.html#">All projects</a></li>
@@ -31,14 +32,16 @@
               <li><a class="dropdown-item" target="_blank" href="http://54.201.168.70:8080/MVCFilmSite/">Film Website</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li>/</li>
+          <li>/</li>
+          <form class="form-inline" target="_blank" action="https://www.linkedin.com/in/alexander-mcmichael-8812aa138/">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">LinkedIn Profile</button>
+          </form>
 
-            <a class="nav-link" href="https://www.linkedin.com/in/alexander-mcmichael-8812aa138/" target="_blank">LinkedIn Profile</a>
-          </li>
-          <li class="nav-item">
-
-            <a class="nav-link" href="https://github.com/amcmike3" target="_blank">GitHub Profile</a>
-          </li>
+          <li>/</li>
+          <form class="form-inline" target="_blank" action="https://github.com/amcmike3/">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">GitHub Profile</button>
+          </form>
           <li class="nav-item">
             <a class="nav-link disabled">Coming soon...</a>
           </li>
@@ -48,7 +51,8 @@
 
 
 
-  <h2 class="text-center hover-2">Projects</h2>
+
+  <h2 class="text-center hover-1">Projects</h2>
   <div class="container">
 
 
@@ -59,9 +63,10 @@
           <div class="card-body text-center">
 
             <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
-            <a class="text-white bg-dark"  href="https://github.com/amcmike3/SpringMVCFilmCRUD" target="_blank" class="card-link">GitHub Repo Link</a>
+            <a class="btn text-white bg-dark" href="https://github.com/amcmike3/SpringMVCFilmCRUD" target="_blank" class="card-link">GitHub Repo Link</a>
             <br>
-            <a class="text-white bg-dark" target="_blank" href="http://54.201.168.70:8080/MVCFilmSite/">Film Website</a>
+            <br>
+            <a class="btn text-white bg-dark" target="_blank" href="http://54.201.168.70:8080/MVCFilmSite/">Film Website Link</a>
             <h3>Technologies Used</h3>
             <ul>
               <li>Java</li>
@@ -102,107 +107,108 @@
 
           </div>
         </div>
-      <h5 class="card-title">BlackJack</h5>
-      <div class="card">
-        <div class="card-body text-center">
+        <h5 class="card-title">BlackJack</h5>
+        <div class="card">
+          <div class="card-body text-center">
 
-          <h5 class="card-title mb-2 text-secondary">Java console program</h5>
-          <a href="https://github.com/amcmike3/BlackJackProject" target="_blank" class="text-white bg-dark" >GitHub Repo Link</a>
-          <h3>Java Concepts Used</h3>
-          <ul>
-            <li>Abstraction</li>
-            <li>Polymorphism</li>
-            <li>Inheritance</li>
-            <li>Encapsulation</li>
-            <li>Enums</li>
-            <li>Emphasis on Objects rather than primitives.</li>
-            <li>Data Structures</li>
-            <li>Overriding</li>
-            <li>Overloading</li>
-          </ul>
-          <p>
-            - this game implements the four pillars of Object Oriented programming Abstraction, Polymorphism, Inheritance, Encapsulation.
-            <br />
-            - This game utilizes several classes one for a card, a deck, a player, a dealer etc...
-            <br />
-            - This is a black jack game and the usual rules apply so have fun.
-            <br />
-            - if you go over 21 you bust, if you're 21 or under and dealer busts you win, if you get the same score as the dealer its a push, if you don't bust but dealer has higher cards and also has not busted you lose and vice versa.
-            <br />
-            - Problem Gambling Hotline: 24-HOUR CONFIDENTIAL HELPLINE: Call or Text 1-800-522-4700.
-          </p>
+            <h5 class="card-title mb-2 text-secondary">Java console program</h5>
+            <a href="https://github.com/amcmike3/BlackJackProject" target="_blank" class="btn text-white bg-dark">GitHub Repo Link</a>
+            <h3>Java Concepts Used</h3>
+            <ul>
+              <li>Abstraction</li>
+              <li>Polymorphism</li>
+              <li>Inheritance</li>
+              <li>Encapsulation</li>
+              <li>Enums</li>
+              <li>Emphasis on Objects rather than primitives.</li>
+              <li>Data Structures</li>
+              <li>Overriding</li>
+              <li>Overloading</li>
+            </ul>
+            <p>
+              - this game implements the four pillars of Object Oriented programming Abstraction, Polymorphism, Inheritance, Encapsulation.
+              <br />
+              - This game utilizes several classes one for a card, a deck, a player, a dealer etc...
+              <br />
+              - This is a black jack game and the usual rules apply so have fun.
+              <br />
+              - if you go over 21 you bust, if you're 21 or under and dealer busts you win, if you get the same score as the dealer its a push, if you don't bust but dealer has higher cards and also has not busted you lose and vice versa.
+              <br />
+              - Problem Gambling Hotline: 24-HOUR CONFIDENTIAL HELPLINE: Call or Text 1-800-522-4700.
+            </p>
 
+          </div>
+        </div>
+      </div>
+
+      <div class="col card bg-secondary mycontent-right">
+        <h5 class="card-title">Dad Joke Website</h5>
+        <div class="card">
+          <div class="card-body text-center">
+
+            <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
+            <a class="btn text-white bg-dark" target="_blank" href="https://github.com/amcmike3/JPACRUDProject">GitHub Repo Link</a>
+            <br>
+            <br>
+            <a class="btn text-white bg-dark" target="_blank" href="http://54.201.168.70:8080/DadJokes/">Dad Joke Website Link</a>
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Java</li>
+              <li>Amazon Cloud Services</li>
+              <li>Spring</li>
+              <li>SpringBoot</li>
+              <li>BootStrap</li>
+              <li>JPA</li>
+              <li>Gradle</li>
+              <li>HTML & CSS</li>
+              <li>MYSQL Database</li>
+              <li>MYSQL WorkBench</li>
+              <li>Tomcat Server</li>
+              <li>CRUD: Create, Read, Update, Delete</li>
+              <li>JSP Files</li>
+              <li>Servlet Page</li>
+              <li>XML Files</li>
+              <li>DAO: Database Accessor Objects</li>
+              <li>Terminal</li>
+            </ul>
+
+            <p>
+              - This project was extremely beneficial to expand my understanding, comprehension, and implementation of the technologies listed above.
+              <br /> - I had a lot of fun creating the user experience for this application. The key to success was upfront planning and organization.
+              <br /> - With so many different functionalities that I wanted to implement it was important that I break the big tasks into little ones focusing only on a single method or JSP page and trusting that I will be able to pick up a page or
+              method I have not seen in sometime and be able to interpret and interact with it later.
+              <br /> I particularly liked how I handled errors in keeping with the theme of the website.
+              <br /> This website hosts over 1100 jokes and growing; there is a csv file of over 231,000 but to keep amazon hosting costs down, I have opted to utilize a smaller data set in the active website.
+            </p>
+            <ol>
+              <li>On every page the user is presented with 6 buttons the home button, create, read, update, delete, and show all.
+              </li>
+              <li>
+                From the home page 21 random jokes are displayed with the option to look up any joke by id. Each joke displayed is a link that will bring the user to a page that displays all the information about the joke including its several
+                ratings which are displayed as progress bars. Several other pages ultimately end up on this page. It is displayed after creation, reading, or updating of any joke.
+              </li>
+              <li>
+                The create button will bring the user to a page with a form that allows the user to enter the specified information. When finished the user can press the save button and the information will get persisted into the database.
+              </li>
+              <li>
+                The read button will bring the user to a page where they can enter a joke id and then get routed to a page that displays all the information about the joke they entered.</li>
+              <li>
+                the update button will first make a user search for the joke they want to update and then show them the information about the joke. this is the same flow as the read button because when all the information is displayed there is a
+                button at the bottom which a user can press to update. The user is first required to see the information to ensure they are editing the joke they originally intended to. this will protect the data in the database by adding one check
+                before data is altered. once the save button is clicked the joke will be re-displayed with all changes if no change was made the information displayed will not reflect the changes.</li>
+              <li>
+                the delete button will first make a user search for the joke they want to delete. at which point all the information is displayed with a warning message and two links one which will route the user to the home page and another which
+                will attempt to delete the data. if successful a success message is displayed otherwise a failure message is displayed.
+              </li>
+              <li>
+                lastly the show all button will retrieve all jokes from the database and display it in a random order.
+              </li>
+            </ol>
+
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col card bg-secondary mycontent-right">
-      <h5 class="card-title">Dad Joke Website</h5>
-      <div class="card">
-        <div class="card-body text-center">
-
-          <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
-          <a class="text-white bg-dark" target="_blank"  href="https://github.com/amcmike3/JPACRUDProject">GitHub Repo Link</a>
-          <br>
-          <a class="text-white bg-dark" target="_blank"  href="http://54.201.168.70:8080/DadJokes/">Dad Joke Website Link</a>
-          <h3>Technologies Used</h3>
-          <ul>
-            <li>Java</li>
-            <li>Amazon Cloud Services</li>
-            <li>Spring</li>
-            <li>SpringBoot</li>
-            <li>BootStrap</li>
-            <li>JPA</li>
-            <li>Gradle</li>
-            <li>HTML & CSS</li>
-            <li>MYSQL Database</li>
-            <li>MYSQL WorkBench</li>
-            <li>Tomcat Server</li>
-            <li>CRUD: Create, Read, Update, Delete</li>
-            <li>JSP Files</li>
-            <li>Servlet Page</li>
-            <li>XML Files</li>
-            <li>DAO: Database Accessor Objects</li>
-            <li>Terminal</li>
-          </ul>
-
-          <p>
-            - This project was extremely beneficial to expand my understanding, comprehension, and implementation of the technologies listed above.
-            <br /> - I had a lot of fun creating the user experience for this application. The key to success was upfront planning and organization.
-            <br /> - With so many different functionalities that I wanted to implement it was important that I break the big tasks into little ones focusing only on a single method or JSP page and trusting that I will be able to pick up a page or
-            method I have not seen in sometime and be able to interpret and interact with it later.
-            <br /> I particularly liked how I handled errors in keeping with the theme of the website.
-            <br /> This website hosts over 1100 jokes and growing; there is a csv file of over 231,000 but to keep amazon hosting costs down, I have opted to utilize a smaller data set in the active website.
-          </p>
-          <ol>
-            <li>On every page the user is presented with 6 buttons the home button, create, read, update, delete, and show all.
-            </li>
-            <li>
-              From the home page 21 random jokes are displayed with the option to look up any joke by id. Each joke displayed is a link that will bring the user to a page that displays all the information about the joke including its several
-              ratings which are displayed as progress bars. Several other pages ultimately end up on this page. It is displayed after creation, reading, or updating of any joke.
-            </li>
-            <li>
-              The create button will bring the user to a page with a form that allows the user to enter the specified information. When finished the user can press the save button and the information will get persisted into the database.
-            </li>
-            <li>
-              The read button will bring the user to a page where they can enter a joke id and then get routed to a page that displays all the information about the joke they entered.</li>
-            <li>
-              the update button will first make a user search for the joke they want to update and then show them the information about the joke. this is the same flow as the read button because when all the information is displayed there is a
-              button at the bottom which a user can press to update. The user is first required to see the information to ensure they are editing the joke they originally intended to. this will protect the data in the database by adding one check
-              before data is altered. once the save button is clicked the joke will be re-displayed with all changes if no change was made the information displayed will not reflect the changes.</li>
-            <li>
-              the delete button will first make a user search for the joke they want to delete. at which point all the information is displayed with a warning message and two links one which will route the user to the home page and another which
-              will attempt to delete the data. if successful a success message is displayed otherwise a failure message is displayed.
-            </li>
-            <li>
-              lastly the show all button will retrieve all jokes from the database and display it in a random order.
-            </li>
-          </ol>
-
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
 </body>
 
