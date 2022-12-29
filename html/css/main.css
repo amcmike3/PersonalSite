@@ -12,6 +12,7 @@ Gray #585B56
 
 body {
   background-color: #56A3A6;
+
 }
 
 .card-title {
@@ -147,11 +148,11 @@ h1 {
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  letter-spacing: inherit;
   /* Adjust as needed */
   animation:
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end 8;
+    blink-caret .5s step-end 6;
 }
 
 /* The typing effect */
