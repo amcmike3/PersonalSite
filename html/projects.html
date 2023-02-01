@@ -313,8 +313,16 @@
                   This EventTrackerProject tracks workouts so weight, reps, and sets of exercises can be recorded to track growth. <strong><em> This project features a single HTML page that is dynamically changed via Javascript DOM manipulation. </em> </strong> XHR is used to send and receive JSON Objects from RESTful api's which is how the data is populated. The Api's are handle via a Java backend utilizing Spring Boot and JPA. The underlying Database is a MySQL database and communication with the database is handled using Hibernate in conjunction with JPA. Stylings are handled utilizing Bootstrap and CSS. With this app there are full CRUD operations on Workouts and partial CRUD on exercises.
                 <p>
                 <ul>
-                  <img src="images/Screen Shot 2023-02-01 at 4.33.07 PM.png" alt="">
-                  <img src="images/Screen Shot 2023-02-01 at 4.34.51 PM.png" alt="">
+                  <h5>Future implementations:</h5>
+                  <li>Add the ability to update and delete Exercises.</li>
+                  <li>create a nav bar with several options to create workouts, search for workouts, and show a limited view of workouts.</li>
+                  <li>add more stylings with pretty graphics.</li>
+                  <br>
+                  <h5>Limitations:</h5>
+                  <li>Each exercise is its own entity in the DB. It would be better to be able to reference the same exercises in multiple workouts but due to limitations on Many To Many relationships from JPA there is not an elegant way to accomplish this.</li>
+                  <li>Every time page is loaded all the workouts stored in the db are loaded. This will not be optimal as the size of the DB grows.</li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </li>
             </ol>
