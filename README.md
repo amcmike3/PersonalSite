@@ -1,3 +1,3 @@
 # Personal Site
 
-- will become a website portfolio of projects and a resume 
+- Source Code for my personal website landing page describing my experience and previous projects.
