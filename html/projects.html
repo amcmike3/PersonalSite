@@ -311,11 +311,18 @@
             <ol>
               <li>
                 <p>
-                  This EventTrackerProject tracks workouts so weight, reps, and sets of exercises can be recorded to track growth. <strong><em> This project features a single HTML page that is dynamically changed via Javascript DOM manipulation. </em> </strong> XHR is used to send and receive JSON Objects from RESTful api's which is how the data is populated. The Api's are handle via a Java backend utilizing Spring Boot and JPA. The underlying Database is a MySQL database and communication with the database is handled using Hibernate in conjunction with JPA. Stylings are handled utilizing Bootstrap and CSS. With this app there are full CRUD operations on Workouts and partial CRUD on exercises.
-                <p>
+                  This EventTrackerProject tracks workouts so weight, reps, and sets of exercises can be recorded to track growth. <strong><em> This project started out as a single HTML page that was dynamically changed via Javascript DOM manipulation and XHR to send and receive JSON Objects from RESTful api's. </em> </strong> Over the course of this project the decision was made to change the front end to angular. This entire website is still a dynamic single page application but the data manipulation is accomplished through data-binding and DOM manipulation is offloaded to angualar. the logic that was offloaded by using Angular did not end there though. Dependency injection and modularization helped to keep code clean and maintainable.
+                  - Utilizing Components and services on the front end help keep the entire stack within the MVC framework, and separate concerns.
+                  - An insturmental peice and one of my favorite parts of the angular part of this application was utilizing pipes to filter the data. Because of the one to many relationship within the database actually removing data from the database is a fairly strenuous activity. However, to get around this each row has a column enabled and this is how checking is done to determine whether or not a peice of data should be displayed. Instead of having to make this check every time data is displayed, I was able to use a pipe that filters the data as soon as it gets populated from JSON.
+                  - One thing I learned on this project which will be helpful in the future was how to pass data between child and parent components. It was necessary to two-way bind and one-way bind data in different components and had it not been for this functionality it would not have been possible to separate concerns through different components.
+                  - Stylings are handled utilizing Bootstrap and CSS.
+                  
+                  <h4>Backend</h4>
+                  
+                  - The Api's are handled via a Java backend utilizing Spring Boot and JPA. The underlying Database is a MySQL database and communication with the database is handled using Hibernate in conjunction with JPA. With this app there are full CRUD operations on on two database tables representing Workouts and exercises. <p>
                 <ul>
                   <h5>Future implementations:</h5>
-                  <li>Add the ability to update and delete Exercises.</li>
+                  <li style="text-decoration: line-through;">Add the ability to update and delete Exercises.</li>
                   <li>create a nav bar with several options to create workouts, search for workouts, and show a limited view of workouts.</li>
                   <li>add more stylings with pretty graphics.</li>
                   <br>
