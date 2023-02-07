@@ -60,6 +60,68 @@
 
     <div class="row ">
       <div class="col card bg-secondary mycontent-left">
+        <h5 class="card-title">Workout Tracker</h5>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
+            <form class="form-inline" target="_blank" action="https://github.com/amcmike3/EventTrackerProject">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">GitHub Repo Link</button>
+            </form>
+            <form class="form-inline" target="_blank" action="http://54.201.168.70:8080/WorkoutTrackerBoot/">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Website Link</button>
+            </form>
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Java</li>
+              <li>Angular</li>
+              <li>Typescript</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Rest</li>
+              <li>Amazon Cloud Services</li>
+              <li>Spring</li>
+              <li>SpringBoot</li>
+              <li>BootStrap</li>
+              <li>JPA</li>
+              <li>Gradle</li>
+              <li>HTML & CSS</li>
+              <li>Bootstrap</li>
+              <li>MYSQL Database</li>
+              <li>Tomcat Server</li>
+              <li>CRUD: Create, Read, Update, Delete</li>
+              <li>JSP Files</li>
+              <li>DAO: Database Accessor Objects</li>
+              <li>Linux Terminal</li>
+              <li>TDD</li>
+            </ul>
+            <p>
+            <ol>
+              <li>
+                <p>
+                  This EventTrackerProject tracks workouts so weight, reps, and sets of exercises can be recorded to track growth. <strong><em> This project started out as a single HTML page that was dynamically changed via Javascript DOM manipulation and XHR to send and receive JSON Objects from RESTful api's. </em> </strong> Over the course of this project the decision was made to change the front end to angular. This entire website is still a dynamic single page application but the data manipulation is accomplished through data-binding and DOM manipulation is offloaded to angualar. the logic that was offloaded by using Angular did not end there though. Dependency injection and modularization helped to keep code clean and maintainable.
+                  - Utilizing Components and services on the front end help keep the entire stack within the MVC framework, and separate concerns.
+                  - An insturmental peice and one of my favorite parts of the angular part of this application was utilizing pipes to filter the data. Because of the one to many relationship within the database actually removing data from the database is a fairly strenuous activity. However, to get around this each row has a column enabled and this is how checking is done to determine whether or not a peice of data should be displayed. Instead of having to make this check every time data is displayed, I was able to use a pipe that filters the data as soon as it gets populated from JSON.
+                  - One thing I learned on this project which will be helpful in the future was how to pass data between child and parent components. It was necessary to two-way bind and one-way bind data in different components and had it not been for this functionality it would not have been possible to separate concerns through different components.
+                  - Stylings are handled utilizing Bootstrap and CSS.
+                  
+                  <h4>Backend</h4>
+                  
+                  - The Api's are handled via a Java backend utilizing Spring Boot and JPA. The underlying Database is a MySQL database and communication with the database is handled using Hibernate in conjunction with JPA. With this app there are full CRUD operations on on two database tables representing Workouts and exercises. <p>
+                <ul>
+                  <h5>Future implementations:</h5>
+                  <li style="text-decoration: line-through;">Add the ability to update and delete Exercises.</li>
+                  <li>create a nav bar with several options to create workouts, search for workouts, and show a limited view of workouts.</li>
+                  <li>add more stylings with pretty graphics.</li>
+                  <br>
+                  <h5>Limitations:</h5>
+                  <li>Each exercise is its own entity in the DB. It would be better to be able to reference the same exercises in multiple workouts but due to limitations on Many To Many relationships from JPA there is not an elegant way to accomplish this.</li>
+                  <li>Every time page is loaded all the workouts stored in the db are loaded. This will not be optimal as the size of the DB grows.</li>
+                </ul>
+              </li>
+            </ol>
+            </p>
+          </div>
+        </div>
         <h5 class="card-title">Open Office Website</h5>
         <div class="card">
           <div class="card-body text-center">
@@ -116,57 +178,6 @@
               </li>
             </ol>
             </p>
-          </div>
-        </div>
-        <h5 class="card-title">SpringMVC Film Website</h5>
-        <div class="card">
-          <div class="card-body text-center">
-
-            <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
-            <form class="form-inline" target="_blank" action="https://github.com/amcmike3/SpringMVCFilmCRUD">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">GitHub Repo Link</button>
-            </form>
-            <form class="form-inline" target="_blank" action="http://54.201.168.70:8080/MVCFilmSite/">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Film Website Link</button>
-            </form>
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Java</li>
-              <li>Spring</li>
-              <li>Gradle</li>
-              <li>HTML & CSS</li>
-              <li>MYSQL Database</li>
-              <li>CRUD: Create, Read, Update, Delete</li>
-              <li>JSP Files</li>
-              <li>Servlet Page</li>
-              <li>XML Files</li>
-              <li>DAO: Database Accessor Objects</li>
-              <li>Terminal</li>
-              <li>Paired Programming</li>
-            </ul>
-            <p>
-            <ol>
-              <li>
-                This application allows a user to search for, add, update, or delete a film from a SQL database. From the home page, the user is able to choose from a list of menu options. Those options include;
-                <ul>
-                  <li>Find Film by ID</li>
-                  <li>Find Film by Keyword</li>
-                  <li>Create Film</li>
-                  <li>Delete Film</li>
-                  <li>Update Film</li>
-                  <li>Find Actor by ID</li>
-                  <li>Create Actor</li>
-                </ul>
-              </li>
-              <li>This project was extremely beneficial to or understanding, comprehension, and implementation on all things listed above.
-              </li>
-              <li>
-                Working on this project as a team, communicating back and forth, adding, committing, pulling and pushing to create the final project was a lot of fun. The key to success was organization.
-              </li>
-            </ol>
-            </p>
-
-
           </div>
         </div>
         <h5 class="card-title">BlackJack</h5>
@@ -273,63 +284,50 @@
 
           </div>
         </div>
-        <h5 class="card-title">Workout Tracker</h5>
+        <h5 class="card-title">SpringMVC Film Website</h5>
         <div class="card">
           <div class="card-body text-center">
+
             <h5 class="card-title mb-2 text-secondary">Actively Deployed Website</h5>
-            <form class="form-inline" target="_blank" action="https://github.com/amcmike3/EventTrackerProject">
+            <form class="form-inline" target="_blank" action="https://github.com/amcmike3/SpringMVCFilmCRUD">
               <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">GitHub Repo Link</button>
             </form>
-            <form class="form-inline" target="_blank" action="http://54.201.168.70:8080/WorkoutTrackerBoot/">
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Website Link</button>
+            <form class="form-inline" target="_blank" action="http://54.201.168.70:8080/MVCFilmSite/">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Film Website Link</button>
             </form>
             <h3>Technologies Used</h3>
             <ul>
               <li>Java</li>
-              <li>Angular</li>
-              <li>Typescript</li>
-              <li>JavaScript</li>
-              <li>SQL</li>
-              <li>Rest</li>
-              <li>Amazon Cloud Services</li>
               <li>Spring</li>
-              <li>SpringBoot</li>
-              <li>BootStrap</li>
-              <li>JPA</li>
               <li>Gradle</li>
               <li>HTML & CSS</li>
-              <li>Bootstrap</li>
               <li>MYSQL Database</li>
-              <li>Tomcat Server</li>
               <li>CRUD: Create, Read, Update, Delete</li>
               <li>JSP Files</li>
+              <li>Servlet Page</li>
+              <li>XML Files</li>
               <li>DAO: Database Accessor Objects</li>
-              <li>Linux Terminal</li>
-              <li>TDD</li>
+              <li>Terminal</li>
+              <li>Paired Programming</li>
             </ul>
             <p>
             <ol>
               <li>
-                <p>
-                  This EventTrackerProject tracks workouts so weight, reps, and sets of exercises can be recorded to track growth. <strong><em> This project started out as a single HTML page that was dynamically changed via Javascript DOM manipulation and XHR to send and receive JSON Objects from RESTful api's. </em> </strong> Over the course of this project the decision was made to change the front end to angular. This entire website is still a dynamic single page application but the data manipulation is accomplished through data-binding and DOM manipulation is offloaded to angualar. the logic that was offloaded by using Angular did not end there though. Dependency injection and modularization helped to keep code clean and maintainable.
-                  - Utilizing Components and services on the front end help keep the entire stack within the MVC framework, and separate concerns.
-                  - An insturmental peice and one of my favorite parts of the angular part of this application was utilizing pipes to filter the data. Because of the one to many relationship within the database actually removing data from the database is a fairly strenuous activity. However, to get around this each row has a column enabled and this is how checking is done to determine whether or not a peice of data should be displayed. Instead of having to make this check every time data is displayed, I was able to use a pipe that filters the data as soon as it gets populated from JSON.
-                  - One thing I learned on this project which will be helpful in the future was how to pass data between child and parent components. It was necessary to two-way bind and one-way bind data in different components and had it not been for this functionality it would not have been possible to separate concerns through different components.
-                  - Stylings are handled utilizing Bootstrap and CSS.
-                  
-                  <h4>Backend</h4>
-                  
-                  - The Api's are handled via a Java backend utilizing Spring Boot and JPA. The underlying Database is a MySQL database and communication with the database is handled using Hibernate in conjunction with JPA. With this app there are full CRUD operations on on two database tables representing Workouts and exercises. <p>
+                This application allows a user to search for, add, update, or delete a film from a SQL database. From the home page, the user is able to choose from a list of menu options. Those options include;
                 <ul>
-                  <h5>Future implementations:</h5>
-                  <li style="text-decoration: line-through;">Add the ability to update and delete Exercises.</li>
-                  <li>create a nav bar with several options to create workouts, search for workouts, and show a limited view of workouts.</li>
-                  <li>add more stylings with pretty graphics.</li>
-                  <br>
-                  <h5>Limitations:</h5>
-                  <li>Each exercise is its own entity in the DB. It would be better to be able to reference the same exercises in multiple workouts but due to limitations on Many To Many relationships from JPA there is not an elegant way to accomplish this.</li>
-                  <li>Every time page is loaded all the workouts stored in the db are loaded. This will not be optimal as the size of the DB grows.</li>
+                  <li>Find Film by ID</li>
+                  <li>Find Film by Keyword</li>
+                  <li>Create Film</li>
+                  <li>Delete Film</li>
+                  <li>Update Film</li>
+                  <li>Find Actor by ID</li>
+                  <li>Create Actor</li>
                 </ul>
+              </li>
+              <li>This project was extremely beneficial to or understanding, comprehension, and implementation on all things listed above.
+              </li>
+              <li>
+                Working on this project as a team, communicating back and forth, adding, committing, pulling and pushing to create the final project was a lot of fun. The key to success was organization.
               </li>
             </ol>
             </p>
